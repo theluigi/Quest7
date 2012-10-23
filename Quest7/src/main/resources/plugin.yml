@@ -1,0 +1,25 @@
+name: Quest7
+main: edu.unca.jruggier.Quest7.Quest7
+version: 0.1
+
+commands:
+   item:
+      description: Command base
+      usage: /<item> command
+      permission: item.*
+permissions:
+  item.*:
+    description: set permission for item.* commands
+    default: true
+    children:
+      item.woodsword:
+        description: gives player a wooden sword
+      item.ironsword:
+        description: gives player an iron sword
+      item.goldsword:
+        description: gives player a gold sword
+      item.stonesword:
+        description: gives player a stone sword
+      item.diamondsword:
+        description: gives player a diamond sword
+     
